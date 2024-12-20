@@ -4,20 +4,20 @@
     "net8.0-windows7.0": {
       "NINA.Plugin": {
         "type": "Direct",
-        "requested": "[3.0.0.2017-beta, )",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "CI5ka76j6fvrnRajHRpvc7raRD5Un9XhNa6M0zOnPoPk9bxTsr9BMCzyPb6tmkfpN9wVm6jNtw0+0lrma6Qksg==",
+        "requested": "[3.1.2.9001, )",
+        "resolved": "3.1.2.9001",
+        "contentHash": "vTHvkyHQp14tHlTb/Y/wA9nNmi6DqIdAh7tatjdcwnWgtGnSl1mKASgfsNcUnj15B8v4iBhx5VPmkCOpEXsW+g==",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Astrometry": "3.0.0.2017-beta",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.Equipment": "3.0.0.2017-beta",
-          "NINA.Image": "3.0.0.2017-beta",
-          "NINA.PlateSolving": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta",
-          "NINA.Sequencer": "3.0.0.2017-beta",
-          "NINA.WPF.Base": "3.0.0.2017-beta",
-          "NJsonSchema": "10.9.0",
+          "NINA.Astrometry": "3.1.2.9001",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.Equipment": "3.1.2.9001",
+          "NINA.Image": "3.1.2.9001",
+          "NINA.PlateSolving": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001",
+          "NINA.Sequencer": "3.1.2.9001",
+          "NINA.WPF.Base": "3.1.2.9001",
+          "NJsonSchema": "11.0.0",
           "Trinet.Core.IO.Ntfs": "4.1.1"
         }
       },
@@ -43,12 +43,30 @@
           "Accord.Math": "3.8.2-alpha"
         }
       },
+      "ASCOM.Alpaca.Components": {
+        "type": "Transitive",
+        "resolved": "1.0.112",
+        "contentHash": "NJro6y7w52RhysWFzMdCmupJmvl/X5o0tkx554r02K7NxvSX3NZdHCh3SwszO+VTmTswPlnwwTcSdWZdoQ571w==",
+        "dependencies": {
+          "ASCOM.Common.Components": "1.0.112",
+          "ASCOM.Exception.Library": "6.6.1",
+          "System.Text.Json": "6.0.6"
+        }
+      },
+      "ASCOM.Alpaca.Device": {
+        "type": "Transitive",
+        "resolved": "1.0.112",
+        "contentHash": "VSf/hd0vwgxOxwzE+zk8ymOcHs3iyHW/q0fweLHXDA9aQiRcUxuJ7Sw7JB7PRaZq/iEyPjMPjbDsvVNF6b9zTw==",
+        "dependencies": {
+          "ASCOM.Common.Components": "1.0.112"
+        }
+      },
       "ASCOM.Com.Components": {
         "type": "Transitive",
-        "resolved": "1.0.110",
-        "contentHash": "hr6tRn1b7iEtV6hE6U1gazvF5paAEvmm36BRSbabfXURz+C7zu4lGsudqA44J4xC4W1+YYGMkvw3GHvZv6pXiw==",
+        "resolved": "1.0.112",
+        "contentHash": "WsqRDXpEFayROus8pa5lb9J2Ur9c3gqDzX/thwv6ftaAJ58jhGAkTFtdGEh0cZBpH1mi6UjOGzv1Iw8UtI45fA==",
         "dependencies": {
-          "ASCOM.Common.Components": "1.0.110",
+          "ASCOM.Common.Components": "1.0.112",
           "ASCOM.Exception.Library": "6.6.1",
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.Win32.Registry": "5.0.0"
@@ -56,8 +74,8 @@
       },
       "ASCOM.Common.Components": {
         "type": "Transitive",
-        "resolved": "1.0.110",
-        "contentHash": "Q79R/btB9KMJc16egQACIKt8zWZNZL9hV4Ib60TCknyMaVCGcz7n8d26I3ohh4E08tWYKDCaYr72qG7CZd1Wxg==",
+        "resolved": "1.0.112",
+        "contentHash": "GwEtFhTFEgJpG9a9HSm+RGtutP/jBaSw4tnUYSQAX9IiihCUbecPZw0iYEfyiK0qUw16epLa9z+J8Y92hBgspw==",
         "dependencies": {
           "ASCOM.Exception.Library": "6.6.1",
           "System.Text.Json": "6.0.6"
@@ -96,13 +114,13 @@
       },
       "CsvHelper": {
         "type": "Transitive",
-        "resolved": "30.0.1",
-        "contentHash": "rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg=="
+        "resolved": "31.0.2",
+        "contentHash": "ndlIN77XcFm6qqGlNPzl0XjVupMCBVhVSiO+1+X2UhJtnnvkx9f//7FOvlkLuEQ76NC3Y7owa8IOhgtKVa4H7Q=="
       },
       "DotNetProjects.Extended.Wpf.Toolkit": {
         "type": "Transitive",
-        "resolved": "5.0.106",
-        "contentHash": "EX5uG2TIlX3MvPPKiePY9rwsOuVqlUmCF4DKxouv+c4Y+YP3G/tEj3TDwKMlAoWVNX3slphHGURswuIJr6D28w=="
+        "resolved": "5.0.115",
+        "contentHash": "qYr+DIkp5/0Ql2ZXmy8ShgLvl4GxDNphQlAKO4M1H6fZo0X0NqlA27PD4ejOdplGox5nTsA0eo9cAVb5R8rWCQ=="
       },
       "EntityFramework": {
         "type": "Transitive",
@@ -118,31 +136,31 @@
       },
       "Fastenshtein": {
         "type": "Transitive",
-        "resolved": "1.0.0.8",
-        "contentHash": "sFzPyg8P7YowvLuyH4xWAARLA3X5hpsI/RSFyNKVRTcPLIIhLLIw2V7aIGUnoKn9W8JoMT7S4MfaEVhsxT4tVw=="
+        "resolved": "1.0.0.9",
+        "contentHash": "VnND+q8RtUSJRxeMp4xgZiI2SW/GqswqnFVWIDglNg8XPa+6Mahbf5dULc0apCJNPgwKXzEASDFnxORJzBCZSw=="
       },
       "Google.Protobuf": {
         "type": "Transitive",
-        "resolved": "3.25.1",
-        "contentHash": "Sw9bq4hOD+AaS3RrnmP5IT25cyZ/T1qpM0e8+G+23Nojhv7+ScJFPEAQo1m4EFQWhXoI4FRZDrK+wjHCPw9yxg=="
+        "resolved": "3.26.1",
+        "contentHash": "CHZX8zXqhF/fdUtd+AYzew8T2HFkAoe5c7lbGxZY/qryAlQXckDvM5BfOJjXlMS7kyICqQTMszj4w1bX5uBJ/w=="
       },
       "Google.Protobuf.Tools": {
         "type": "Transitive",
-        "resolved": "3.25.1",
-        "contentHash": "iUZvqVJ6O8enV5OuXtH7nYazr8sNyNyjcaATIUC2QN5Gh81oDNLO5+W5qy4z78gZ/gLAF022yweawZd4llfypw=="
+        "resolved": "3.26.1",
+        "contentHash": "OwVxj33D/LeXx3upbqwVogsOQ4jHYrN8/qCf/BCcgkVsT57SmcHYRZySa039lyuYdp0sjyvRCWC2zFfJ8U+NeA=="
       },
       "Grpc.Core.Api": {
         "type": "Transitive",
-        "resolved": "2.59.0",
-        "contentHash": "n0QpwXqri/Uu7pXWbE6PWVANEhKggC6QRX7qsSR4vyzZRDN2jBPoUNvrJP7RBw7g8Dgg8e2bWYuGKq4ph6VXeA=="
+        "resolved": "2.62.0",
+        "contentHash": "q4Jj6bRZHNnE4CMLqgjiBUCKLit+tRr0simZsS2W6U++akd7CzXByeKy2tddqT68hFzP2XzceXA2YtBTfWtixA=="
       },
       "GrpcDotNetNamedPipes": {
         "type": "Transitive",
-        "resolved": "2.1.0",
-        "contentHash": "ZijIVZvolq7Y9oPfb5O9ZTxuvt65XgEF/E6eshRnjZ8AlnFTyJq2nfC31tx0miELsU197ZXiorrwrny5CJZnPw==",
+        "resolved": "3.0.0",
+        "contentHash": "bGlOFJnf12QXrNanfZspXfA99cHGkku3487tzm/mx+y/Ab58eQZV/44mDwQFpMT2J77GLjP0fHR13/6C0p0Iyw==",
         "dependencies": {
-          "Google.Protobuf": "3.21.9",
-          "Grpc.Core.Api": "2.49.0",
+          "Google.Protobuf": "3.25.1",
+          "Grpc.Core.Api": "2.59.0",
           "System.Memory": "4.5.5"
         }
       },
@@ -156,8 +174,8 @@
       },
       "K4os.Compression.LZ4": {
         "type": "Transitive",
-        "resolved": "1.3.6",
-        "contentHash": "RxGhoJBjZCgGeZgDqOP4Krs1cR9PHInbz6d2N19Dic0Y6ZACzVKbR3uSpqfEZf4RiUbHk9aiog2eS22nQPTc2A=="
+        "resolved": "1.3.8",
+        "contentHash": "LhwlPa7c1zs1OV2XadMtAWdImjLIsqFJPoRcIWAadSRn0Ri1DepK65UbWLPmt4riLqx2d40xjXRk0ogpqNtK7g=="
       },
       "Microsoft.CSharp": {
         "type": "Transitive",
@@ -173,6 +191,11 @@
         "type": "Transitive",
         "resolved": "1.1.0",
         "contentHash": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg=="
+      },
+      "Microsoft.Web.WebView2": {
+        "type": "Transitive",
+        "resolved": "1.0.2535.41",
+        "contentHash": "E3rAxpp2GVtg99wlRBjIM5YeCXFvhPQuHGn/rfxjAJLNbKfiflliljtY/aJBkMmCzf/KmDhTTmU1hoOsEtuW+Q=="
       },
       "Microsoft.Win32.Primitives": {
         "type": "Transitive",
@@ -205,8 +228,8 @@
       },
       "Namotion.Reflection": {
         "type": "Transitive",
-        "resolved": "2.1.2",
-        "contentHash": "7tSHAzX8GWKy0qrW6OgQWD7kAZiqzhq+m1503qczuwuK6ZYhOGCQUxw+F3F4KkRM70aB6RMslsRVSCFeouIehw==",
+        "resolved": "3.1.1",
+        "contentHash": "Qn0wM7u9TpSpja2x8UVexr2bLHb1DGMNhD2TCz3woklxaY1oH+Sitrw9fg/4YbNoNtczeH2jf+yPdXMQlgvFlQ==",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0"
         }
@@ -269,42 +292,42 @@
       },
       "NINA.Accord.Imaging": {
         "type": "Transitive",
-        "resolved": "3.5.0",
-        "contentHash": "478MfXwwCG4YeYbfpfMQhnzXxuyK8m0l6BdByTSU9xGORSoi69rUAW+qfey90IZim467piKUZ+yT5rYEUBPn0w==",
+        "resolved": "3.5.3",
+        "contentHash": "RYhsfaaEkXtleyeBey0swidpX46MYeSmGlvRdPwIP6NizucSgd/LPW6rzZJEMLJbRhlV3kuyQAAvXhEm6Gw2MQ==",
         "dependencies": {
           "Accord": "3.8.2-alpha",
           "Accord.Math": "3.8.2-alpha",
           "Accord.Statistics": "3.8.2-alpha",
-          "System.Drawing.Common": "6.0.0"
+          "System.Drawing.Common": "8.0.5"
         }
       },
       "NINA.Astrometry": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "COa/3E4gup768MkrG3/PWJGODu3zW3KlIAmjCTy/EDCjyhCC+MrOIzLqdUSIXp3ZRx7NQUKnVru6JH1SnsBC3A==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "hwJkpy6b+B4/Vl4khwhNuFfwPyMpcxcUYNC120DTIx8gPm5XdQAsTE/phfIpOLf2waSAVE4qcbVbow0I/GlPXQ==",
         "dependencies": {
-          "Fastenshtein": "1.0.0.8",
+          "Fastenshtein": "1.0.0.9",
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001",
           "Nito.AsyncEx.Context": "5.1.2",
-          "Nito.Disposables": "2.4.0"
+          "Nito.Disposables": "2.5.0"
         }
       },
       "NINA.Core": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "TpwCBii99pxpaQz7ZdfF6yLR14nEK+ecFzxw/jwy5dOsvMb42pVUHy53GuLY66wFELPwx7pCT6oWnZHTap1QsQ==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "48wjGsRVgI8XZkHNTd7Rrr0BP0cGwl7Tni7ByU9K1uSoovZ8WS6KdJmxL9hy2n83dkuX2FZEiOcoCl52LVE7uw==",
         "dependencies": {
           "Accord.Math": "3.8.2-alpha",
           "CommunityToolkit.Mvvm": "8.2.2",
-          "Google.Protobuf": "3.25.1",
-          "Google.Protobuf.Tools": "3.25.1",
-          "Grpc.Core.Api": "2.59.0",
+          "Google.Protobuf": "3.26.1",
+          "Google.Protobuf.Tools": "3.26.1",
+          "Grpc.Core.Api": "2.62.0",
           "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "13.0.3",
           "OxyPlot.Core": "2.1.2",
-          "Serilog.Sinks.Console": "5.0.0",
+          "Serilog.Sinks.Console": "5.0.1",
           "Serilog.Sinks.File": "5.0.0",
           "System.ComponentModel.Composition": "8.0.0",
           "System.Data.SQLite": "1.0.118",
@@ -316,124 +339,127 @@
       },
       "NINA.CustomControlLibrary": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "9UZMK6UHu8UlUFYEd+DtSrkeQXnfFo2A9JewK5p9ZRNlaOLUuBqdTVef8rRXNZcJSERRpkIzgk57ElaPuN3n2Q==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "lvyWsK6sgqkcO6lJIsVGqmQUzBBFY9oogy/RpFTaiXNhhTWa80LGLm6zyzum2SGjAK7NqmUzGGOB5qnZe/vi3g==",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Core": "3.0.0.2017-beta"
+          "NINA.Core": "3.1.2.9001"
         }
       },
       "NINA.Equipment": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "D8RWOl4USnOgU69NdII9t62GAW3dHbvyQBtjRpo9Okzc6sCtNzmn6fFTR1DJ72hEJJPS7WRNtLMnCdiSz28ZjA==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "KrQelQ8d0E83nvJYwZuaqvgTxDjXraZi1PeeEn37Kd8pfKu3UlbjrkVzO0oSfeydzg9VbxSeTD9Onuh+ug/gbQ==",
         "dependencies": {
-          "ASCOM.Com.Components": "1.0.110",
+          "ASCOM.Alpaca.Components": "1.0.112",
+          "ASCOM.Alpaca.Device": "1.0.112",
+          "ASCOM.Com.Components": "1.0.112",
           "Castle.Core": "5.1.1",
           "Castle.Core.AsyncInterceptor": "2.1.0",
-          "Google.Protobuf.Tools": "3.25.1",
-          "GrpcDotNetNamedPipes": "2.1.0",
+          "Google.Protobuf.Tools": "3.26.1",
+          "GrpcDotNetNamedPipes": "3.0.0",
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Astrometry": "3.0.0.2017-beta",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.Image": "3.0.0.2017-beta",
-          "NINA.MGEN": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta",
-          "NINA.nikoncswrapper": "3.0.0.2017-beta",
+          "NINA.Astrometry": "3.1.2.9001",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.Image": "3.1.2.9001",
+          "NINA.MGEN": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001",
+          "NINA.nikoncswrapper": "3.1.2.9001",
           "SharpGIS.NmeaParser": "2.2.2"
         }
       },
       "NINA.Image": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "knVuPb/18xd+fFRzFcG1jfREg7ASr2sqhiof0I7INJMmxw6Xzpe2vDst5dAwyHXEkLE2S69xAWzcVKmEinu+BQ==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "ZYQdCWw3oeqW74xLjyd1mYmh8JhWpCQ36q4QndykK7PJ7x7LzWWw+OedWlnx7syZM/7zP1d7jVD1odfXaSbuzQ==",
         "dependencies": {
           "Iconic.Zlib.Netstandard": "1.0.0",
-          "K4os.Compression.LZ4": "1.3.6",
+          "K4os.Compression.LZ4": "1.3.8",
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Accord.Imaging": "3.5.0",
-          "NINA.Astrometry": "3.0.0.2017-beta",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta",
+          "NINA.Accord.Imaging": "3.5.3",
+          "NINA.Astrometry": "3.1.2.9001",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001",
           "Nito.AsyncEx": "5.1.2",
           "VVVV.FreeImage": "3.15.1.1"
         }
       },
       "NINA.MGEN": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "hupevEhXWtq7pjtFkOSQEdrXLsRUW6e7JlpdK3LxQtzNwa+IcKROFnwqQYgDZ7CDF1waAkc7Zn0RTRUiAoEJGg==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "4NxGSL4jQkcvFz7wRjm+feeF6460UGlHrPMNRuxLgZklQn9JkSdZsr+Av+TQB+0Hd1nyh4aXdhGo73AuM0rUnA==",
         "dependencies": {
-          "System.Drawing.Common": "8.0.0"
+          "System.Drawing.Common": "8.0.5"
         }
       },
       "NINA.nikoncswrapper": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "HvzWgZxYfVhhAgLNqQVpkIUxasjeZimJv4QBZuc4OaRTtWTmNAExacV3nwSnBZ//FdNv+D92DLcpaCf9/5MuUQ==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "Cnu4SNs6tsyD7AGGnV+tsZRI/PhH4OIP2r/FE2hLuNPehBh0lf8zIKaH0VZxCJTXVZeidRyvaM5yW3Nz8JB9jQ==",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "System.Data.DataSetExtensions": "4.5.0"
         }
       },
-      "NINA.Platesolving": {
+      "NINA.PlateSolving": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "/EKRLJqwvnKpE2tOBAAZJtML8/N5rP78Y7DBNJp1T8X3yrU/QtZXd9Ce0zUEDsqqD/8rjSjrYWyex5VtyVaNvw==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "euC4tsx+2wbiv3UAHid+TthyF4S5xSS6GzIC+AOBxuf+1Ji0iPAyztElt1JciLgSBVpOW+K/APTASrKqiKfDxg==",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Astrometry": "3.0.0.2017-beta",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.Equipment": "3.0.0.2017-beta",
-          "NINA.Image": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta"
+          "NINA.Astrometry": "3.1.2.9001",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.Equipment": "3.1.2.9001",
+          "NINA.Image": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001"
         }
       },
       "NINA.Profile": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "CY8dEcYacM5VgwIwgyXykCLEIfH0tvvQ+H8FpwnIaGErFfaBJ5Gb/UMAhlzF4Z950/c3M+Q9OPEKXSP+AE7Img==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "J1YYlD4SoJZESvQpT0PB11BQjZqqO41EZdiQ3J0XPaEun5E2vrwUeDqDeoC81fEq0YVPbp32LLe1LG6LK2UmeA==",
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.2.2",
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Core": "3.0.0.2017-beta"
+          "NINA.Core": "3.1.2.9001"
         }
       },
       "NINA.Sequencer": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "Eor9QAEdtphBWl7lAZ6WJ3KS1u+PR6ZGCxQxSmIzO+HXvEJRvQ4SY/TNYlkReJDRWSPBzLiUhIIShO1gLA3yUw==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "leQt/GzAbWOiPj3Xm9Fo4Etz2hEjt6kxQOCEHEreOYogcxiI6vzoydKSfdPS2DPs0V8WWGXGBERBGIyowJWDBQ==",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "NINA.Astrometry": "3.0.0.2017-beta",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.CustomControlLibrary": "3.0.0.2017-beta",
-          "NINA.Equipment": "3.0.0.2017-beta",
-          "NINA.Image": "3.0.0.2017-beta",
-          "NINA.PlateSolving": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta",
-          "NINA.WPF.Base": "3.0.0.2017-beta"
+          "NINA.Astrometry": "3.1.2.9001",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.CustomControlLibrary": "3.1.2.9001",
+          "NINA.Equipment": "3.1.2.9001",
+          "NINA.Image": "3.1.2.9001",
+          "NINA.PlateSolving": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001",
+          "NINA.WPF.Base": "3.1.2.9001"
         }
       },
       "NINA.WPF.Base": {
         "type": "Transitive",
-        "resolved": "3.0.0.2017-beta",
-        "contentHash": "iUieFwD5aOuxa4C493WQ7v93j8DoRB/jxIo9+2Su8BNgnWMTywdDdKimTn6HnCumSigTfvA9sE7LgQDdrnMbQg==",
+        "resolved": "3.1.2.9001",
+        "contentHash": "NYpXODfiYElrTWFlidUdBU/KsDYP0UeMbabuxHHeSI+PxLzy/aiiLxJxW8eUQYoc3p3GlDrDi3IGR9fKOfgswA==",
         "dependencies": {
           "AsyncEnumerator": "4.0.2",
-          "CsvHelper": "30.0.1",
-          "DotNetProjects.Extended.Wpf.Toolkit": "5.0.106",
+          "CsvHelper": "31.0.2",
+          "DotNetProjects.Extended.Wpf.Toolkit": "5.0.115",
           "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Web.WebView2": "1.0.2535.41",
           "Microsoft.Xaml.Behaviors.Wpf": "1.1.77",
-          "NINA.Accord.Imaging": "3.5.0",
-          "NINA.Astrometry": "3.0.0.2017-beta",
-          "NINA.Core": "3.0.0.2017-beta",
-          "NINA.CustomControlLibrary": "3.0.0.2017-beta",
-          "NINA.Equipment": "3.0.0.2017-beta",
-          "NINA.Image": "3.0.0.2017-beta",
-          "NINA.MGEN": "3.0.0.2017-beta",
-          "NINA.PlateSolving": "3.0.0.2017-beta",
-          "NINA.Profile": "3.0.0.2017-beta",
+          "NINA.Accord.Imaging": "3.5.3",
+          "NINA.Astrometry": "3.1.2.9001",
+          "NINA.Core": "3.1.2.9001",
+          "NINA.CustomControlLibrary": "3.1.2.9001",
+          "NINA.Equipment": "3.1.2.9001",
+          "NINA.Image": "3.1.2.9001",
+          "NINA.MGEN": "3.1.2.9001",
+          "NINA.PlateSolving": "3.1.2.9001",
+          "NINA.Profile": "3.1.2.9001",
           "Nito.Mvvm.Async": "1.0.0-pre-04",
           "OxyPlot.Contrib": "2.1.2",
           "OxyPlot.Contrib.Wpf": "2.1.2",
@@ -510,8 +536,8 @@
       },
       "Nito.Disposables": {
         "type": "Transitive",
-        "resolved": "2.4.0",
-        "contentHash": "buc3JYWJqfdgccwZq7zCnF6uOHFUo86QIswOE817J01Mh8hvCA/TShTjwxlKXVmd52mIhySdNFY9sbmv+pRXBg==",
+        "resolved": "2.5.0",
+        "contentHash": "l0OuzZ2T/botMbOvPGY6yp3v+69aMrt+wzST/tFdGnHEFVXbbdOFxu3bfo9XH1N1H0LCQlA3RmFvlPO8zA+faw==",
         "dependencies": {
           "System.Collections.Immutable": "1.5.0"
         }
@@ -535,12 +561,18 @@
       },
       "NJsonSchema": {
         "type": "Transitive",
-        "resolved": "10.9.0",
-        "contentHash": "IBPo6Srxn2MEcIFM3HdM4QImrJbsIeujENQyzHL2Pv6wLsKSYAyAEilecRqaLOhoy3snEiPLx7hhv7opbhOxKQ==",
+        "resolved": "11.0.0",
+        "contentHash": "yJviNfW8U8+ACJO0VyiNuNIDGoRDZO5awNfjL1+6iO7TVI5pfjun+ZBVsv1hLga/IVlhnUPpMj8VuhQAYfXD/A==",
         "dependencies": {
-          "Namotion.Reflection": "2.1.2",
-          "Newtonsoft.Json": "9.0.1"
+          "NJsonSchema.Annotations": "11.0.0",
+          "Namotion.Reflection": "3.1.1",
+          "Newtonsoft.Json": "13.0.3"
         }
+      },
+      "NJsonSchema.Annotations": {
+        "type": "Transitive",
+        "resolved": "11.0.0",
+        "contentHash": "kbUrZfspa+Y5Kz0OaRbLQxLtVydWFvkY1CpwfKmravZXG2icphuYHR58EwBZuCQWJb/BL81PGP4FjpDNBFnn6Q=="
       },
       "OxyPlot.Contrib": {
         "type": "Transitive",
@@ -751,15 +783,15 @@
       },
       "Serilog": {
         "type": "Transitive",
-        "resolved": "3.1.0",
-        "contentHash": "UPJGG8Hz12obhtAELHb0q83j0YpO1vGCypUbH0P4wMZnrpcqmrSLhHkZ/4Ojc+iNVpLwZ/wPBVC3lwSzzoZ/MQ=="
+        "resolved": "3.1.1",
+        "contentHash": "P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A=="
       },
       "Serilog.Sinks.Console": {
         "type": "Transitive",
-        "resolved": "5.0.0",
-        "contentHash": "IZ6bn79k+3SRXOBpwSOClUHikSkp2toGPCZ0teUkscv4dpDg9E2R2xVsNkLmwddE4OpNVO3N0xiYsAH556vN8Q==",
+        "resolved": "5.0.1",
+        "contentHash": "6Jt8jl9y2ey8VV7nVEUAyjjyxjAQuvd5+qj4XYAT9CwcsvR70HHULGBeD+K2WCALFXf7CFsNQT4lON6qXcu2AA==",
         "dependencies": {
-          "Serilog": "3.1.0"
+          "Serilog": "3.1.1"
         }
       },
       "Serilog.Sinks.File": {
@@ -960,8 +992,8 @@
       },
       "System.Drawing.Common": {
         "type": "Transitive",
-        "resolved": "8.0.0",
-        "contentHash": "JkbHJjtI/dWc5dfmEdJlbe3VwgZqCkZRtfuWFh5GOv0f+gGCfBtzMpIVkmdkj2AObO9y+oiOi81UGwH3aBYuqA==",
+        "resolved": "8.0.5",
+        "contentHash": "n55wb6rL8YG254AG+SfQOSQencrcnpKAAcYyEcvBuO2pob7ltXuZ5skBBdvLJOLVPKd1Ya8+8ColIM5AtBo5ww==",
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "8.0.0"
         }
