@@ -22,7 +22,7 @@ jobs:
         dotnet-quality: 'ga'
         cache: true
     - run: dotnet restore --locked-mode
-    - run: dotnet test --configuration Release
+    - run: dotnet test
 
   build:
     runs-on: windows-2022
