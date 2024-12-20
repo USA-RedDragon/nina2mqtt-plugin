@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 'true'
+
+jobs:
+  release:
+    runs-on: windows-2022
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Check version tag
+      env:
+        VERSION: ${{ github.ref_name }}
+      run: |
+        $ErrorActionPreference = "Stop"
+        $tagExists = git rev-parse -q --verify "refs/tags/$env:VERSION" 2>$null
+        if (-not $tagExists) {
+            Write-Host "Tag $env:VERSION does not exist"
+            exit 1
+        }
+    - uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+        dotnet-quality: 'ga'
+        cache: true
+    - run: dotnet restore --locked-mode
+    - run: dotnet build --configuration Release
+    - name: Create release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG: ${{ github.ref_name }}
+      run: |
+        $repo = $env:GITHUB_REPOSITORY
+        $tag = $env:TAG
+        $tagWithoutV = $tag.Substring(1)
+        $repoName = $repo.Split('/')[1]
+        $title = "$repoName $tagWithoutV"
+
+        gh release create $env:TAG `
+          --repo=$env:GITHUB_REPOSITORY `
+          --title=$title `
+          --generate-notes
+    - name: Upload artifacts
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG: ${{ github.ref_name }}
+      run: |
+        $files = Get-ChildItem -Path "bin/Release" -Recurse -Filter "USARedDragon.NINA.Nina2mqtt.dll"
+        $files | ForEach-Object {
+            gh release upload $env:TAG --repo=$env:GITHUB_REPOSITORY $_.FullName
+        }
